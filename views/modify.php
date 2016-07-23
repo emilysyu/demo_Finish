@@ -3,9 +3,9 @@
 
 <body>
     <meta contect=t ext/html charset=utf-8>
-    <link rel="stylesheet" type="text/css" media="screen" href="calendar.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/EasyMVC_/views/calendar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/EasyMVC_/views/bootstrap.css">
+    <link rel="stylesheet" href="/EasyMVC_/views/css/style.css">
 
     <?php 
     $id = $_GET['id'];
@@ -16,7 +16,7 @@
     <div class="container">
         	<section id="content">
         <h1>修改</h1>
-        <form method="POST" action="../controllers/dbcrud.php">
+        <form method="POST" action="/EasyMVC_/taskcurd/modifyTask">
             <div>
         <table>
             <tr>

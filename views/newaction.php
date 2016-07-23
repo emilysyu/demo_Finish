@@ -1,9 +1,11 @@
+<?session_start();?>
+
 <!DOCTYPE html>
 <html >
   <head>
     <meta charset="UTF-8">
     <title>Login form using HTML5 and CSS3</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/EasyMVC_/views/css/style.css">
 
   </head>
 
@@ -12,7 +14,7 @@
     <body>
 <div class="container">
 	<section id="content">
-		<form method="POST" action="../controllers/dbcrud.php">
+		<form method="POST" action="/EasyMVC_/action/actionNew">
 			<h1>New Action</h1>
 			<div>
 				<input type="text" name="Who" placeholder="Who" id="Who" />

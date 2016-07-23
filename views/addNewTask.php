@@ -1,25 +1,23 @@
-<?php session_start();
-include_once("../models/class.crud.php");
-?>
+<?php session_start();?>
 <html>
 
 <body>
     <meta contect=t ext/html charset=utf-8>
-    <link rel="stylesheet" type="text/css" media="screen" href="calendar.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/EasyMVC_/views/calendar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/EasyMVC_/views/bootstrap.css">
     <h1>新增待辦日期</h1>
-    <form method="POST" action="../controllers/dbcrud.php">
+    <form method="POST" action="/EasyMVC_/taskcurd/newTask">
         <table>
             <tr>
                 <td width="80" align="center" valign="baseline">
-                    <h4><?php  echo $_GET['year'];?>年</h4></td>
-                    <input style="visibility:hidden" name="year" value="<?php  echo $_GET['year'];?>" />
+                    <h4><?php  echo $data['y'];?>年</h4></td>
+                    <input style="visibility:hidden" name="year" value="<?php  echo $data['y'];?>" />
                 <td width="80" align="center" valign="baseline">
-                    <h4><?php  echo $_GET['month'];?>月</h4></td>
-                    <input style="visibility:hidden" name="month" value="<?php  echo $_GET['month'];?>" />
+                    <h4><?php  echo $data['m'];?>月</h4></td>
+                    <input style="visibility:hidden" name="month" value="<?php  echo $data['m'];?>" />
                 <td width="80" align="center" valign="baseline">
-                    <h4><?php  echo $_GET['day'];?>日</h4></td>
-                    <input style="visibility:hidden" name="day" value="<?php  echo $_GET['day'];?>" />
+                    <h4><?php  echo $data['d'];?>日</h4></td>
+                    <input style="visibility:hidden" name="day" value="<?php  echo $data['d'];?>" />
                 <td width="80" align="center" valign="baseline">新增事件</td>
                 <td valign="baseline"><input type="text" name="dateTask" id="dateTask">
                 <input class="btn btn-default" type="submit" id="ok" name=add value="確認" /></td>
@@ -28,8 +26,9 @@ include_once("../models/class.crud.php");
         </table>
 </form>
     <?php
-        $crud=new CRUD();
-        $date = $_GET['year']."-".$_GET['month']."-".$_GET['day'];
+    
+        $crud=$this->model("CRUD");
+        $date = $data['y']."-".$data['m']."-".$data['d'];
         $result2 = $crud->read_judge($date);
         $row2 = mysql_fetch_array($result2);
         
@@ -51,7 +50,7 @@ include_once("../models/class.crud.php");
 <?php 
                     if($_SESSION['username'] != 'boss'){
                     $result = $crud->read_judge($date);
-                    
+                    $save=1;
                     while($row = mysql_fetch_array($result)){
                         $coun=substr($row[0],8);
                     if($row[1]==$_SESSION['username'] || $row[1]=='boss'){
@@ -73,8 +72,8 @@ include_once("../models/class.crud.php");
                       
                     </td>
                     <td>
-                         <button class="btn btn-default"  id="modify" /><a href="../views/modify.php?id=<?php echo $row[0];?>">修改</a></button>
-                    <form method="POST" action="../controllers/dbcrud.php?id=<?php echo $row[0];?>">
+                         <button class="btn btn-default"  id="modify" /><a href="/EasyMVC_/taskcurd/modify?id=<?php echo $row[0];?>">修改</a></button>
+                    <form method="POST" action="/EasyMVC_/taskcurd/delecteTask?id=<?php echo $row[0];?>">
                          <button class="btn btn-default" type="submit" name="deleteok" id="deleteok" />刪除</button>
                     </form>
                     </td> 

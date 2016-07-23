@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <title>Login form using HTML5 and CSS3</title>
     
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/EasyMVC_/views/css/style.css">
   </head>
 
   <body>
-
     <body>
 <div class="container">
 	<section id="content">
-		<form method="POST" action="../controllers/dbcrud.php">
+		<form method="POST" action="/EasyMVC_/login/login">
 			<h1>Login Form</h1>
 			<div>
 				<input type="text" placeholder="Username" name="Username" id="Username" />
@@ -30,6 +29,6 @@
 	</section><!-- content -->
 </div><!-- container -->
 </body>
-        <script src="js/index.js"></script>
+        <script src="/EasyMVC_/views/js/index.js"></script>
   </body>
 </html>

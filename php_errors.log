@@ -1,3 +1,107 @@
+<<<<<<< HEAD
+[20-Jul-2016 12:34:47 UTC] PHP Fatal error:  Class 'Controller' not found in /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php on line 3
+[20-Jul-2016 12:34:47 UTC] PHP Stack trace:
+[20-Jul-2016 12:34:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php:0
+[20-Jul-2016 12:39:50 UTC] PHP Fatal error:  Class 'Controller' not found in /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php on line 3
+[20-Jul-2016 12:39:50 UTC] PHP Stack trace:
+[20-Jul-2016 12:39:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php:0
+[20-Jul-2016 12:41:41 UTC] PHP Fatal error:  Class 'Controller' not found in /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php on line 3
+[20-Jul-2016 12:41:41 UTC] PHP Stack trace:
+[20-Jul-2016 12:41:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php:0
+[20-Jul-2016 12:45:35 UTC] PHP Fatal error:  Class 'Controller' not found in /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php on line 3
+[20-Jul-2016 12:45:35 UTC] PHP Stack trace:
+[20-Jul-2016 12:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php:0
+[20-Jul-2016 12:55:28 UTC] PHP Fatal error:  Class 'Controller' not found in /home/ubuntu/workspace/EasyMVC_/controllers/loginController.php on line 2
+[20-Jul-2016 12:55:28 UTC] PHP Stack trace:
+[20-Jul-2016 12:55:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[20-Jul-2016 12:55:28 UTC] PHP   2. include_once() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:5
+[20-Jul-2016 12:55:28 UTC] PHP   3. require_once() /home/ubuntu/workspace/EasyMVC_/models/class.crud.php:3
+[20-Jul-2016 12:59:02 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/ubuntu/workspace/EasyMVC_/controllers/registerController.php on line 5
+[20-Jul-2016 12:59:34 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/ubuntu/workspace/EasyMVC_/controllers/registerController.php on line 5
+[20-Jul-2016 13:01:28 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/ubuntu/workspace/EasyMVC_/controllers/registerController.php on line 5
+[20-Jul-2016 13:03:59 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting function (T_FUNCTION) in /home/ubuntu/workspace/EasyMVC_/controllers/registerController.php on line 5
+[23-Jul-2016 04:16:14 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 04:16:14 UTC] PHP Stack trace:
+[23-Jul-2016 04:16:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 04:16:14 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 04:16:14 UTC] PHP Stack trace:
+[23-Jul-2016 04:16:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 04:16:14 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 04:16:14 UTC] PHP Stack trace:
+[23-Jul-2016 04:16:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:24:12 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:24:12 UTC] PHP Stack trace:
+[23-Jul-2016 10:24:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:24:12 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:24:12 UTC] PHP Stack trace:
+[23-Jul-2016 10:24:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:24:12 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 10:24:12 UTC] PHP Stack trace:
+[23-Jul-2016 10:24:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:37:29 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:37:29 UTC] PHP Stack trace:
+[23-Jul-2016 10:37:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:37:29 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:37:29 UTC] PHP Stack trace:
+[23-Jul-2016 10:37:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:37:29 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 10:37:29 UTC] PHP Stack trace:
+[23-Jul-2016 10:37:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:28 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:45:28 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:28 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:45:28 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:28 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 10:45:28 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:37 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:45:37 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:37 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 10:45:37 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 10:45:37 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 10:45:37 UTC] PHP Stack trace:
+[23-Jul-2016 10:45:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:25:41 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:25:41 UTC] PHP Stack trace:
+[23-Jul-2016 12:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:25:41 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:25:41 UTC] PHP Stack trace:
+[23-Jul-2016 12:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:25:41 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 12:25:41 UTC] PHP Stack trace:
+[23-Jul-2016 12:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:41:04 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:41:04 UTC] PHP Stack trace:
+[23-Jul-2016 12:41:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:41:04 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:41:04 UTC] PHP Stack trace:
+[23-Jul-2016 12:41:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:41:04 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 12:41:04 UTC] PHP Stack trace:
+[23-Jul-2016 12:41:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:22 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:43:22 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:22 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:43:22 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:22 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 12:43:22 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:27 UTC] PHP Warning:  include_once(../models/class.crud.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:43:27 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:27 UTC] PHP Warning:  include_once(): Failed opening '../models/class.crud.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 5
+[23-Jul-2016 12:43:27 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+[23-Jul-2016 12:43:27 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php on line 7
+[23-Jul-2016 12:43:27 UTC] PHP Stack trace:
+[23-Jul-2016 12:43:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/EasyMVC_/controllers/dbcrud.php:0
+=======
 [18-Jul-2016 08:32:36 UTC] PHP Warning:  Missing argument 1 for CRUD::read_ID(), called in /home/ubuntu/workspace/calendar.OOP_1/controllers/dbcrud.php on line 35 and defined in /home/ubuntu/workspace/calendar.OOP_1/models/class.crud.php on line 23
 [18-Jul-2016 08:32:36 UTC] PHP Stack trace:
 [18-Jul-2016 08:32:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/calendar.OOP_1/controllers/dbcrud.php:0
@@ -308,3 +412,4 @@
 [22-Jul-2016 06:08:54 UTC] PHP Stack trace:
 [22-Jul-2016 06:08:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/calendar.OOP_1/views/calendar.php:0
 [22-Jul-2016 06:08:54 UTC] PHP   2. mysql_fetch_array() /home/ubuntu/workspace/calendar.OOP_1/views/calendar.php:34
+>>>>>>> 5cc732cb11affc102ca580f0b1cff2393a7ba655
