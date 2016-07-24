@@ -51,7 +51,7 @@ td, th{
                if($i == 0){
                     echo "<tr>";
                }
-               echo "<td><a href = 'newTask?y=".$data['y']."&m=".$data['m']."&d=".$data['show'][$i]."'>".$data['show'][$i]."</a></td>";
+               echo "<td ><a href = 'newTask?y=".$data['y']."&m=".$data['m']."&d=".$data['show'][$i]."'>".$data['show'][$i]."</a></td>";
                if($i>=6 && ($i+1)%7 == 0){
                     echo "</tr>";
                }

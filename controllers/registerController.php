@@ -12,6 +12,7 @@ class registerController extends Controller {
         $result = $crud->read_user($username);
         $row=mysql_fetch_assoc($result);
         if($row > 0){
+        echo '<meta charset="UTF-8">';
         echo'<script>alert("帳號重複");document.location.href="../views/register.php"</script>';
         }
         else{

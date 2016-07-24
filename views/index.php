@@ -8,9 +8,6 @@
   </head>
 
   <body>
-<?php
-echo $_SERVER['PHP_SELF'];
-?>
     <body>
 <div class="container">
 	<section id="content">

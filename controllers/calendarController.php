@@ -38,8 +38,8 @@ class calendarController extends Controller{
     $data['y']=$y;
     $data['m']=$m;
     $this->view("calendarshow",$data);
-}
-     function newTask(){
+}    
+     function newTask(){           //新增事件           
           $data['y'] = $_GET['y'];
           $data['m'] = $_GET['m'];
           $data['d'] = $_GET['d'];

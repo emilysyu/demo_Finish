@@ -34,7 +34,10 @@
         
     ?>
     <div class="col-lg-6">
-        <?php if(empty($row2)){?>
+        <?php if($_SESSION['username']!= 'boss' && empty($row2)){?>
+        <h1 style="color:red">目前沒有任何活動</h1>
+        <?php }
+        else if($_SESSION['username']== 'boss' && empty($row2)){?>
         <h1 style="color:red">目前沒有任何活動</h1>
         <?php }?>
         <?php if(!empty($row2)){?>
