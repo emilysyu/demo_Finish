@@ -1,6 +1,6 @@
 <?php
 session_start();
-class loginController extends Controller {  //https://lab-emilysyu.c9users.io/EasyMVC_/login(XXController)
+class loginController extends Controller {  
 
     function index(){
         $this->view("index");   

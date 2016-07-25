@@ -25,22 +25,16 @@
             </tr>
         </table>
 </form>
-    <?php
-    
-        $crud=$this->model("CRUD");
-        $date = $data['y']."-".$data['m']."-".$data['d'];
-        $result2 = $crud->read_judge($date);
-        $row2 = mysql_fetch_array($result2);
-        
-    ?>
     <div class="col-lg-6">
-        <?php if($_SESSION['username']!= 'boss' && empty($row2)){?>
+                                                        <!----$row2-->
+        <?php if($_SESSION['username']!= 'boss' && empty($data['row2'])){?>
         <h1 style="color:red">目前沒有任何活動</h1>
         <?php }
-        else if($_SESSION['username']== 'boss' && empty($row2)){?>
+                                                        /*$row2*/       
+        else if($_SESSION['username']== 'boss' && empty($data['row2'])){?>
         <h1 style="color:red">目前沒有任何活動</h1>
         <?php }?>
-        <?php if(!empty($row2)){?>
+        <?php if(!empty($data['row2'])){?>
         <table class="table table-hover">
                 <thead>
                     <td valign="baseline">
@@ -52,48 +46,45 @@
                 </thead>
 <?php 
                     if($_SESSION['username'] != 'boss'){
-                    $result = $crud->read_judge($date);
                     $save=1;
-                    while($row = mysql_fetch_array($result)){
-                        $coun=substr($row[0],8);
-                    if($row[1]==$_SESSION['username'] || $row[1]=='boss'){
+                    foreach($data['row'] as $row){
+                        $coun=substr($row['ID'],8);
+                    if($row['username']==$_SESSION['username'] || $row['username']=='boss'){
                     
                 ?>
                 <tr>
                 <?php if($_SESSION['username'] != 'boss'){?>
                     <td valign="baseline">
-                        <h4><strong><?php echo $coun;?></strong></h4>
+                        <h4><strong><?php echo $save;?></strong></h4>
                        <?php }
                        else{?>
                     <td valign="baseline">
-                        <h4><strong><?php echo $row[1];?></strong></h4>
+                        <h4><strong><?php echo $row['username'];?></strong></h4>
                        <?php }?>
                     </td>
-                    
                     <td valign="baseline">
-                        <h4><strong><?php echo $row[2];?></strong></h4>
+                        <h4><strong><?php echo $row['task'];?></strong></h4>
                       
                     </td>
                     <td>
-                         <button class="btn btn-default"  id="modify" /><a href="/EasyMVC_/taskcurd/modify?id=<?php echo $row[0];?>">修改</a></button>
-                    <form method="POST" action="/EasyMVC_/taskcurd/delecteTask?id=<?php echo $row[0];?>">
+                         <button class="btn btn-default"  id="modify" /><a href="/EasyMVC_/taskcurd/modify?id=<?php echo $row['ID'];?>">修改</a></button>
+                    <form method="POST" action="/EasyMVC_/taskcurd/delecteTask?id=<?php echo $row['ID'];?>">
                          <button class="btn btn-default" type="submit" name="deleteok" id="deleteok" />刪除</button>
                     </form>
                     </td> 
-                 <?php }$save++;}?>
+                 <?php $save++;}}?>
                 </tr>
                 <?php }
                 else {
-                    $result4 = $crud->read_judge($date);
                     $save=1;
-                    while($row4 = mysql_fetch_array($result4)){
+                    foreach($data['row4'] as $row4){
                 ?>
                 <tr>
                     <td valign="baseline">
-                        <h4><strong><?php echo $row4[1];?></strong></h4>
+                        <h4><strong><?php echo $row4['username'];?></strong></h4>
                     </td>
                     <td valign="baseline">
-                        <h4><strong><?php echo $row4[2];?></strong></h4>
+                        <h4><strong><?php echo $row4['task'];?></strong></h4>
                     </td>
                  <?php }?>
                 </tr>

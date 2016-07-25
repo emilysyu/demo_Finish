@@ -71,26 +71,16 @@ if($who_action == "action"){
 <?php }?>
 
 <?php 
-  $userTask = array();
-  $crud=$this->model("CRUD");
-  $taskResult = $crud->read_join($_SESSION['username']);
-  while($row = mysql_fetch_array($taskResult)){
-    $userTask[] = $row['task'];
-  }
-  // var_dump($userTask);
-  
-  
-  $result=$crud->read_action();//查全部活動
-  while($row = mysql_fetch_array($result)){
-    
-    if(!in_array($row['action'], $userTask )){
 
+if(!empty($data['row'])){
+    foreach ($data['row'] as $row) {
+    if(!in_array($row['action'],$data['userTask'] )){
 ?>
-<form method="POST" action="/EasyMVC_/action/join?action=<?php echo $row[1];?>&date=<?php echo $row[2];?>">
-<td><?php echo $row[1];?></td>
+<form method="POST" action="/EasyMVC_/action/join?action=<?php echo $row['action'];?>&date=<?php echo $row['date'];?>">
+<td><?php echo $row['action'];?></td>
 <td><input type="submit" name="join" value="join"/></td>
 </form>
     <?php } //end if?>
-  <?php } //endwhile?>
+  <?php }} //endwhile?>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-class actionController extends Controller {  //https://lab-emilysyu.c9users.io/EasyMVC_/login(XXController)
+class actionController extends Controller { 
     function actionNew(){            //新增活動
  
                 $who_action=$_POST['Who'];
