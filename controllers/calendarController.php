@@ -1,4 +1,5 @@
 <?php
+session_start();
 class calendarController extends Controller{
      function search(){                           //行事曆
          $y = date("Y");

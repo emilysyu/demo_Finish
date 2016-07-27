@@ -15,22 +15,21 @@ class loginController extends Controller {
             $result = $mo->read_user($name);
             $row=mysql_fetch_row($result);
     
-            if($row[0]!=null && $row[1]!=null && $row[0]==$name && $row[1]==$pass){
+            if($name!="" && $pass!="" && $row[0]==$name && $row[1]==$pass){
                 $_SESSION['username']=$row[0];
+                $_SESSION['action']=$_POST['power'];
                 $date= date("Y-m-d",time()+24*3600);
                 $result = $mo->read_normal($date,$_SESSION['username']);
                 $row=mysql_fetch_assoc($result);
                 if($row>0){
-                echo'<script>alert("明日有活動");document.location.href="calendar/search"</script>';
-                            }
-                else{
-                   header("Location:/EasyMVC_/calendar/search");
-                    }
-        }
-        else {
-            $this->view("index");
+                    echo'<script>alert("明日有活動");document.location.href="calendar/search"</script>';
+                } else{
+                    header("Location:/EasyMVC_/calendar/search");
+                }
+            }else {
+                $this->view("index");
             }
-        }
+    }
 
 }
 ?>

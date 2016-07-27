@@ -62,13 +62,14 @@ td, th{
 <input type="submit" name="logout" value="logout"/>
 </form>
 <?php
-$who_action = substr($_SESSION["username"],0,6);
-if($who_action == "action"){
+if(!empty($_SESSION['action'])){
+foreach($_SESSION['action'] as $checkpower)
+if($checkpower=="createAction"){
 ?>
 <form method="POST">
 <button  class="btn btn-info" name="action" ><a style="color:white" href="/EasyMVC_/calendar/newaction">action</a></button>
 </form>
-<?php }?>
+<?php }}?>
 
 <?php 
 

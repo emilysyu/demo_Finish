@@ -23,6 +23,7 @@
 			</div>
 			<div>
 				<input type="submit" name="register" value="register"  />
+				
 			</div>
 		</form><!-- form -->
 		<div class="button">

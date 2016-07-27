@@ -12,12 +12,13 @@
   <body>
 
     <body>
+    
 <div class="container">
 	<section id="content">
 		<form method="POST" action="/EasyMVC_/action/actionNew">
 			<h1>New Action</h1>
 			<div>
-				<input type="text" name="Who" placeholder="Who" id="Who" />
+				<input type="text" name="Who" placeholder="Who" id="Who" value="<?php echo $_SESSION['username'];?>" />
 			</div>
 			<div>
 				<input type="text" name="Action" placeholder="Action" id="Action" />

@@ -8,9 +8,6 @@ class CRUD {
     public function create_user($username,$password){//註冊會員
         mysql_query("INSERT INTO `userList` (`username`,`password`)
         VALUES ('".$username."','".$password."');");
-        
-        mysql_query("INSERT INTO `userList` (`username`,`password`)
-        VALUES ('".action.$username."','".$password."');");
     }
     public function read_user($name){//登入
         

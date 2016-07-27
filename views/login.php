@@ -19,6 +19,7 @@
 			</div>
 			<div>
 				<input type="password" placeholder="Password" name="Password" id="Password" />
+				<input type = "checkbox" name="power[]" value="createAction"><label>createAction</label>
 			</div>
 			<div>
 				<input type="submit" name="Login"value="Log in" />
